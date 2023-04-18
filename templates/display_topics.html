@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <center>
+        <h1>displaying topics</h1>
+        <table border="4px">
+            <tr>
+                <th>Topics</th>
+            </tr>
+            {% for i in topics %}
+             <tr>
+             <td>{{i.topic_name}}</td>
+             </tr>
+             {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
